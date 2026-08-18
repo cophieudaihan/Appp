@@ -85,7 +85,71 @@
             id="dashboardCards"
             class="stats"
         ></div>
+<!-- ==================================================
+     NẠP TIỀN
+================================================== -->
 
+<div class="form-card">
+
+    <h2>💰 Nạp tiền</h2>
+
+    <p class="hint">
+        Tiền nạp sẽ được cộng vào tiền mặt
+        và trở thành tiền khả dụng để mua cổ phiếu.
+    </p>
+
+    <form id="depositForm">
+
+        <div class="grid">
+
+            <label>
+                Ngày nạp
+
+                <input
+                    type="date"
+                    name="date"
+                    required
+                >
+
+            </label>
+
+            <label>
+                Số tiền nạp
+
+                <input
+                    type="number"
+                    name="amount"
+                    min="1"
+                    step="1"
+                    placeholder="Ví dụ: 30000000"
+                    required
+                >
+
+            </label>
+
+            <label>
+                Ghi chú
+
+                <input
+                    type="text"
+                    name="note"
+                    placeholder="Ví dụ: Tiền góp tháng 8"
+                >
+
+            </label>
+
+        </div>
+
+        <button
+            type="submit"
+            class="primary"
+        >
+            + Nạp tiền
+        </button>
+
+    </form>
+
+</div>
 
         <div class="section">
 
